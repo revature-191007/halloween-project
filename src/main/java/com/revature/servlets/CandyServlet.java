@@ -37,4 +37,9 @@ public class CandyServlet extends HttpServlet {
 		om.writeValue(response.getWriter(), candy);
 		
 	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		int myInt = (new int[2])[5];
+	}
 }
